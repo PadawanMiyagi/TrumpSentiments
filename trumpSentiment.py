@@ -15,12 +15,12 @@ def uprint(*objects, sep=' ', end='\n', file=sys.stdout):
     else:
         f = lambda obj: str(obj).encode(enc, errors='backslashreplace').decode(enc)
         print(*map(f, objects), sep=sep, end=end, file=file)
+# insert keys from twitter here:
+consumer_key = ''
+consumer_secret = ''
 
-consumer_key = 'mkX9OKKoKZjG7JNwxxVAEiLLT'
-consumer_secret = 'BQTtBEAwWXhkaullELpPRODOZpg5TjKnsYXp38th8rrkvFvbMP'
-
-access_token = '474211753-GGA3VRgznjCtvbaCXMgF3BxAPuTa5bdaKZnqwkxM'
-access_token_secret = 'LgWIU4L4ApmRTsH6gmL3QDp3YkSlF1ehuFIM0kxAq0b8K'
+access_token = ''
+access_token_secret = ''
 
 #Authentication step
 auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
